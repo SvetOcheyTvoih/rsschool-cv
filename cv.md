@@ -1,7 +1,7 @@
 # Halina Karastseliova
 ## Contact Information
 * **email:** halina.karastseliova@gmail.com
-* **phone:** +37544744XXXX
+* **phone:** +375447447005
 * **GitHub:** [SvetOcheyTvoih](https://github.com/SvetOcheyTvoih)
 ## Summary
 **Aducation:** 
@@ -74,9 +74,16 @@ I do not have any development experience. I was writing auto tests using Seleniu
 * French - A1
 ## Code examples
 
-Task:
+**Task:**
+Write a function to split a string and convert it into an array of words. Examples (Input ==> Output):
 
-Solution: 
+"Robin Singh" ==> ["Robin", "Singh"]
+
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+**Solution:**
 ```
-some code
+function stringToArray(string){
+  return string.split(' ')
+}
 ```
