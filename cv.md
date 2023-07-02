@@ -3,6 +3,7 @@
 * **email:** halina.karastseliova@gmail.com
 * **phone:** +375447447005
 * **GitHub:** [SvetOcheyTvoih](https://github.com/SvetOcheyTvoih)
+
 ## Summary
 **Aducation:** 
 * Institution: Belarusian State University of Informatics and Radioelectronics
@@ -72,8 +73,8 @@ I do not have any development experience. I was writing auto tests using Seleniu
 * Lithuanian - A1
 * Chinese - A1
 * French - A1
-## Code examples
 
+## Code examples
 **Task:**
 Write a function to split a string and convert it into an array of words. Examples (Input ==> Output):
 
