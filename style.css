@@ -67,7 +67,7 @@ body {
   padding: 20px 20px 20px;
   border-bottom: 4px solid #486991;
 }
-section-profile-title {
+.section-profile-title {
    display: flex;
    flex-direction: column;
    justify-content: center;
