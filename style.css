@@ -1,12 +1,218 @@
-<!--creating the file using CSS Example.-->
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
 body {
-  background-color: lightblue;
-     }
-h1 {
-  color: white;
-  text-align: center;
-   }
-p {
-  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  /*min-height: 100vh;*/
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #486991;
+}
+.main {
+  margin-bottom: auto;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+.header {
+  background-color: #486991;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff; 
+  transition: .3s; 
+  cursor: pointer
+}
+.nav-item a {
+  text-decoration: none;  
+  transition: color 0.5s;
+  transition: font-size 0.5s;
+  color: #fff;
+}
+.nav-item a:hover {
+  color: #0b3567;
+  font-size: 24px;
+}
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 20px 20px;
+  border-bottom: 4px solid #486991;
+}
+section-profile-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: left;
+}
+.main-title {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 2px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 30px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  color: #486991;
+}
+.section {
+  width: calc(50% - 20px);
+  padding: 10px;
+  padding-bottom:10px;
+  border-bottom: 2px solid #486991;
+}
+.section-title {
+  padding: 10px;
+  margin-bottom: 10px;
   font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #486991;
+}
+.section-subtitle {
+  padding: 10px;
+  margin-top: 10px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #486991;
+}
+.section-profile-logo {
+  width: 200px;
+  height: 200px;
+}
+.section-item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  padding-left: 26px;
+  list-style: none;
+}
+.section-list{
+  margin: 0;
+  padding: 10px;  
+  list-style: none;
+}
+.section-summary {
+    margin: 0;
+    padding: 30px;  
+    list-style: none;
   }
+.section-item span {
+  color: #8c0f38;
+}
+.section-languages,
+.section-code {
+  border-bottom: 0;
+}
+.contacts-item:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 24px;
+  height: 24px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contacts-item:nth-child(1):before {
+  top: 1px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image:url("./img/logo_email.svg");
+}
+.contacts-item:nth-child(2):before {
+  top: 1px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image:url("./img/logo_git.svg");
+}
+.contacts-item:nth-child(3):before {
+  top: 1px;
+  left: 0px;
+  width: 21px;
+  height: 21px;
+  background-image:url("./img/logo_disc.svg");
+}
+.contact-link {
+  text-decoration: none;
+  transition: color 0.5s;
+color: #8c0f38;
+}
+.contact-link:hover{
+color: #486991;
+}
+.pre {
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  background-color:#486991;
+  padding: 12px;
+  font-size: 14px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.footer-link {
+  line-height: 45px;
+  text-decoration: none;  
+  transition: color 0.5s;
+  transition: font-size 0.5s;
+  color: #fff;
+}
+.footer-link:hover {
+  color: #0b3567;
+  font-size: 18px;
+}
+.rss-footer-logo {
+  width: 121px;
+  height: 45px;
+  background-image: url("./img/logo_rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
