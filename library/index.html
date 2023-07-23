@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="container">
+    <header class="header">
         <div class="header-container">
           <div class="header-text"> Brooklyn Public Library</div>
            <div class="inner-header-container">
@@ -39,9 +39,9 @@
             </div>
         </section>
         <section class="section-about" id="about">
-          <div class="section-title">
-              <div><h2>About</h2></div>
-              <div class="section-underline"></div>
+            <div class="section-title">
+                <div><h2>About</h2></div>
+                <div class="title-underline"></div>
             </div>
             <p class="section-about-text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside.</p>
             <div class="about-slider">
@@ -58,29 +58,82 @@
                   <div><h2>Favorites</h2></div>
                   <div class="title-underline"></div>
               </div>
-              <p class="season-picker-title">Pick favorites of season</p>
-              <div class="seasons-block"></div> 
+              <p class="season-picker-title">Pick favorites of season</p>              
+              <div class="season-picker-block">
+                <div class="radio-button">
+                  <img src="./svg/radiobtn_active.svg" width="17" height="17" alt="active radio button" style="flex-shrink: 0;">
+                </div>
+                <div class="selected-season">Winter</div>
+                <div class="splitter-box"></div>
+                <div class="radio-button">
+                  <img src="./svg/radiobtn_inactive.svg" width="17" height="17" alt="non-selected radio button" style="flex-shrink: 0;">
+                </div>
+                <div class="non-selected-season">Spring</div>
+                <div class="splitter-box"></div>
+                <div class="radio-button">
+                  <img src="./svg/radiobtn_inactive.svg" width="17" height="17" alt="non-selected radio button" style="flex-shrink: 0;">
+                </div>
+                <div class="non-selected-season">Summer</div>
+                <div class="splitter-box"></div>
+                <div class="radio-button">
+                  <img src="./svg/radiobtn_inactive.svg" width="17" height="17" alt="non-selected radio button" style="flex-shrink: 0;">
+                </div>
+                <div class="non-selected-season">Autumn</div>
+              </div>
+              <!-- favorite books block -->  
         </section>
         <section class="section-shop" id="coffee_shop">
             <div class="section-title">
               <div><h2>Coffee Shop</h2></div>
               <div class="title-underline"></div>
-            </div>  
-          <p class="section-shop-text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
-            you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+            </div>
+            <div class="section-shop-text-container">
+                <span class="section-shop-text"><span class="section-shop-text-capital">I</span>n our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+                <span class="section-shop-text-capital">Y</span>ou can get a favorite book and read in coffee shop. <span class="section-shop-text-capital">O</span>ur barista to cook you best coffee, and also you can try desserts from bakery.</span>
+            </div>
+            <div class="section-shop-menu-container">
+              <!-- MENU block -->  
+            </div>
         </section>
         <section class="section-contacts" id="contacts">
           <div class="section-title">
             <div><h2>Our Contacts</h2></div>
             <div class="title-underline"></div>
           </div> 
-          <p class="section-shop-text">Contact info</p>
+          <div class="section-contacts-container">
+            <div class="section-contacts-info">
+              <div style="display: inline; width: 285px; height: 40px;"><span class="section-contacts-info-cap-text">For all Library inquiries:</span></div>                
+              <div style="margin-top: 40px;"><span class="section-contacts-info-text">Please call (617) 730-2370</span></div>
+              <div style="margin-top: 20px;"><span class="section-contacts-info-text">For TTY service, please call (617) 730-2370</span></div>
+              <div style="margin-top: 20px;"><span class="section-contacts-info-text">Putterham Library: (617) 730-2385</span></div>
+              <div style="margin-top: 40px;"><span class="section-contacts-info-cap-text">Senior Staff</span></div>
+              <div style="margin-top: 20px;"><span class="section-contacts-info-text">Library Director: <span class="section-contacts-info-cap-text">Amanda Hirst</span></span></div>                
+            </div>
+            <div class="section-contacts-map"></div>
+          </div>
         </section>
         <section class="section-lib-card" id="library_card">
           <div class="section-title">
             <div><h2>Digital Library Cards</h2></div>
             <div class="title-underline"></div>
-          </div> 
+          </div>
+          <div class="section-lib-card-container">            
+              <!--input controls-->
+            <div class="find-card-block">
+              <div class="find-card-caption">Find your Library card</div>
+
+            </div>          
+            <div class="get-card-block">
+              <div class="get-card-auth">
+                <div class="get-card-auth-caption">Get a reader card</div>
+                <div class="get-card-auth-text">You will be able to see a reader card after logging into account or you can register a new account</div>
+                <div class="get-card-auth-buttons-block">
+                  <button class="auth-button">Sign Up</button>
+                  <button class="auth-button">Log in</button>                  
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
