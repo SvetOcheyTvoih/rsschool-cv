@@ -293,8 +293,90 @@ h2 {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: rgb(243, 240, 145);
+  background-color: rgb(112, 211, 235);
 }
+.section-shop-menu-container {
+  display: flex;
+  margin: 40px 20px;
+  width: 1400px;
+  height: 520px;
+  column-gap: 480px;
+}
+.coffee-tea-area {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /*отступ между позициями в меню*/
+  width: 438px;
+  height: 520px;
+  background-color: #FFF;
+}
+.shop-menu-section-title {
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  background-color: #d6eff5c5;
+}
+.coffee-tea-menu-item {
+  display: flex;
+  gap: 59px; /* must be 60px as per layout in Figma, but not enough to put the name*/
+  width: 438px;
+  height: 40px;
+  background-color: #e9c0eab5;
+}
+.menu-item-text {
+  display: inline;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #e073e1;
+}
+.menu-item-line {
+  width: 100px;
+  height: 1px;  
+  margin-top: 20px;
+  background: #BB945F; 
+}
+.menu-item-price {
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;  
+  color: #000;
+}
+.desserts-area {
+  display: flex;
+  width: 482px;
+  height: 520px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px; /*отступ между позициями в меню*/
+  background-color: #FFF;
+}
+.desserts-menu-item {  
+  display: flex;
+  text-align: right;
+  width: 482px;
+  height: 40px;
+  gap: 60px;
+  background-color: #e9c0eab5;
+}
+/*---I stopped here -----*/
 .section-contacts {
   display: flex;
   flex-direction: column; /*must have*/
