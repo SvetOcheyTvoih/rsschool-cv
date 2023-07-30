@@ -43,12 +43,10 @@ body {
     font-weight: 400;
     line-height: 50px; /* 166.667% */
     letter-spacing: 0.6px;
-    background-color: chartreuse;
   }
   .inner-header-container {
     width: 1058px;
     height: 90px;
-    background-color: deeppink;
   }
 .nav-menu {
     display: inline-flex;
@@ -60,7 +58,6 @@ body {
     justify-content: space-between; /*- одинаковые расстояния между соседними элементами, 
     между элементами и краями флекс-контейнера нет отступов.*/
     align-items: center;
-    background-color: blueviolet;
     /*gap: 30px;*/
 }
 .nav-link {
@@ -74,14 +71,20 @@ body {
 }
 .nav-menu-item a {
   text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-menu-item a:hover {
+  /*border-radius: 2px;
+  border: 1px solid #BB945F;  
+  background: #BB945F;*/
+  color: #BB945F;
 }
 .profile-icon-container {
-  background-color: aliceblue;
+  /*no specific style is defined here*/
 }
 .profile-icon {
   margin: 31px 20px 31px 40px;
-  background-color: blueviolet;
-}
+}  
 .section-welcome {
   width: 1440px;
   height: 600px;
@@ -98,7 +101,6 @@ body {
 }
 .welcome-text {
   margin: 35px 40px 35px 40px;
-  background-color:#227bc9;
   width: 520px;
   height: 150px;
   justify-content: center;
@@ -141,7 +143,7 @@ h2 {
   flex-direction: column;
   width: 1440px;
   height: 837px;
-  background-color: #e073e1;
+  background-color: #FFF;
 }
 .section-title {
   display: block;
@@ -164,14 +166,12 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 200% */
-  background-color: aqua;
 }
 .about-slider {
   display: flex;
   gap: 25px;
   width: 1400px;
   height: 560px;
-  background-color: blanchedalmond;
 }
 .slider-item {
  width: 450px;
@@ -253,6 +253,150 @@ h2 {
   height: 24px;
   background-color: #FFF;
 }
+/* Styles for Favorites section */
+.favorites-container {  
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 40px 220px;
+  width: 1400px;
+  height: 1150px; /*1439px*/
+  margin: 40px 20px; 
+  background-color: #e073e1;
+}
+.favorites-book-block {  
+  flex-shrink: 0;
+  width: 590px;
+  height: 555px;
+  background-color: #FFF;
+}
+.favorites-book-frame {
+  flex-shrink: 0;
+  position: relative;
+  height: 555px;
+  width: 550px;
+  border: 1px solid #000;
+}
+.favorites-picks-container {
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 104px;
+  height: 40px;
+}
+ .favorites-picks-title {  /* Staff Picks*/
+  display: inline;
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.favorites-picks-underline {
+  background-color: #BB945F;
+  height: 1px;
+  width: 60px;
+}
+.favorites-book-caption {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 355px;
+  height: 80px;
+}
+.favorites-book-name {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.favorites-book-author {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.favorites-book-description {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 355px;
+  /*height: 320px;*/ /*Description's height is not the same for different books*/
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.favorites-buy-button {    
+  flex-shrink: 0;       
+  position: absolute;
+  width: 75px;
+  height: 30px;    
+  bottom: 15px;
+  left: 20px;  
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;    
+  color: #0C0C0E;
+  cursor: pointer;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.favorites-buy-button:hover {
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  background: #BB945F;
+  transition: 0.5s;
+}
+.favorites-own-button {    
+  flex-shrink: 0;    
+  position: absolute;
+  width: 75px;
+  height: 30px;    
+  bottom: 15px;
+  left: 20px;    
+  border-radius: 2px;
+  border: 1px solid #BB945F;
+  color: #BB945F;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;    
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;    
+  line-height: normal;
+}
+/*---- Own button must be non-interactive for now -----*/
+/*
+.favorites-own-button:hover {
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  background:#0C0C0E;
+}
+*/
+.favorites-book-cover {  
+  flex-shrink: 0;  
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  /* background: url, margin-left and margin-top are defined individually for each book in index.html using styles */
+}
+/* end of Favorites styles*/
 .section-shop {
   display: flex;
   flex-direction: column; /*must have*/
@@ -307,7 +451,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px; /*отступ между позициями в меню*/
+  gap: 40px; /*межстрочный отступ между позициями в меню*/
   width: 438px;
   height: 520px;
   background-color: #FFF;
@@ -365,7 +509,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 40px; /*отступ между позициями в меню*/
+  gap: 40px; /*межстрочный отступ между позициями в меню*/
   background-color: #FFF;
 }
 .desserts-menu-item {  
@@ -376,7 +520,6 @@ h2 {
   gap: 60px;
   background-color: #e9c0eab5;
 }
-/*---I stopped here -----*/
 .section-contacts {
   display: flex;
   flex-direction: column; /*must have*/
@@ -435,7 +578,7 @@ h2 {
   align-items: center;
   width: 1440px;
   height: 614px;
-  background-color: beige;
+  background-color: #fff;
 }
 .section-lib-card-container {
   display: flex;
@@ -461,7 +604,6 @@ h2 {
   line-height: normal;
   letter-spacing: 0.6px; 
 }
-
 .get-card-block {
   display: flex;
   height: 453px;
@@ -532,9 +674,6 @@ h2 {
   display: inline;
   padding: 10px 40px;
   margin: 20px 176px 30px 176px; /*179px до краёв формы с обеих сторон, но толщина рамки - 3 px*/
-  border-radius: 2px;
-  border: 1px solid #0C0C0E;
-  color: #0C0C0E;
   text-align: center;
   font-family: Inter;
   font-size: 20px;
@@ -543,13 +682,17 @@ h2 {
   line-height: normal;
   letter-spacing: 1px;
   cursor: pointer;
+  color: #0C0C0E;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;
+  background-color:#FFF;
 }
-.submit-button:hover {
+.submit-button:hover {  
+  transition: 0.5s;
   border-radius: 2px;
   border: 1px solid #BB945F;
   background: #BB945F;
   /*подумать, оставить ли такую же интерактивность, как у кнопки Buy, или что-то изменить*/
-  /* I'm working here*/
 }
 .get-card-auth-text {
   width: 456px;
@@ -580,7 +723,6 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: #0C0C0E;
   text-align: center;
   font-family: Inter;
   font-size: 10px;
@@ -588,9 +730,14 @@ h2 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1px;
-  cursor: pointer;
+  cursor: pointer;  
+  color: #0C0C0E;
+  border-radius: 2px;
+  border: 1px solid #0C0C0E;  
+  background-color:#FFF;
 }
 .auth-button:hover {
+  transition: 0.5s;
   border-radius: 2px;
   border: 1px solid #BB945F;
   background: #BB945F;
@@ -634,8 +781,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 149px;
-  height: 40px;
-  background-color: olivedrab;
+  height: 40px;  
+  padding-right: 1px;
+  background-color: rgb(78, 198, 239);
 }
 .working-hours {
   color: #FFF;
@@ -661,7 +809,7 @@ line-height: 20px; /* 133.333% */
 .footer-middle-block {
   display: flex;
   justify-content: space-between;
-  width: 1398px;
+  width: 1400px;
   height: 40px;
   align-items: center;
   gap: 1147px;
@@ -673,6 +821,9 @@ line-height: 20px; /* 133.333% */
 .social-media-icons {
   display: flex;
   gap: 15px;
+  padding-left: 1px;
+  list-style: none;
+  text-decoration: none;
 }
 .footer-bottom-block {
   display: flex;
@@ -684,7 +835,6 @@ line-height: 20px; /* 133.333% */
   justify-content: space-between;
  /* разобраться с отступом от мидл блока на 30px - переделать*/
 }
-  /*заменить на один стиль для всех троих или хотя бы для rss-name и username, т.к. параметра одинаковые, кроме текст декорейшн для ссылок*/
 .year {
   color: #FFF;
   text-align: center;
@@ -695,7 +845,8 @@ line-height: 20px; /* 133.333% */
   line-height: 20px; /* 100% */
   letter-spacing: 2px;
 }
-.rss-name {
+/*используем один стиль вместо rss-name и username, т.к. параметры одинаковые*/
+.rss-name-username {  
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -703,17 +854,6 @@ line-height: 20px; /* 133.333% */
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 100% */
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-.username {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-decoration: none;
 }
