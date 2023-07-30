@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
@@ -80,7 +81,30 @@
                 </div>
                 <div class="non-selected-season">Autumn</div>
               </div>
-              <!-- favorite books block -->  
+              <!-- favorite books block -->
+              <div class="favorites-container">
+                <!--Book 1 block start -->
+                <div class="favorites-book-block">
+                  <div class="favorites-book-frame">
+                    <div class="favorites-picks-container">
+                      <div class="favorites-picks-title">Staff Picks</div>
+                      <div class="favorites-picks-underline"></div>
+                    </div>
+                    <div class="favorites-book-caption">
+                      <p class="favorites-book-author"><span class="favorites-book-name">The Book Eaters</span><br> By Sunyi Dean</p>
+                    </div>
+                    <div style="height: 320px;" class="favorites-book-description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</div>
+                    <button type="button" class="favorites-buy-button">Buy</button>
+                    <div style="background: url(./img/book_cover_eaters.png), lightgray 50% / cover no-repeat; left: 390px; top: 256px;" class="favorites-book-cover">                  
+                    </div>
+                  </div>
+                </div>
+                <!--Book 1 block end  -->
+                <!--Book 2 block start -->
+
+                <!--Book 2 block end  -->
+              </div>
+              <!--  -->
         </section>
         <section class="section-shop" id="coffee_shop">
             <div class="section-title">
@@ -220,7 +244,7 @@
                   <input type="text" id="name" name="readers-name" placeholder="  Reader's name" class="find-card-input">
                   <input type="text" id="card-number" name="card-number" placeholder="  Card number" class="find-card-input">
                 </div>
-                <button type="submit" class="submit-button" value="Check the card"></button>       
+                <input type="submit" class="submit-button" value="Check the card">      
               </div>
              <!--input controls end-->
             </div>          
@@ -253,13 +277,24 @@
                 </div>
             </div>
             <div class="footer-middle-block">
-              <div class="footer-middle-left-block">                  
+              <div class="footer-middle-left-block">
+              <!--Re-worked Social media icons to make them a list
                 <div class="social-media-icons">
-                  <!-- redo as a list to meet the task requirements - we have to use list type twice -->
-                    <a href="https://www.twitter.com"><img src="./svg/u_twitter-alt.svg" alt="twitter icon" class="footer-icon"></a>
-                    <a href="https://www.instagram.com"><img src="./svg/u_instagram.svg" alt="instagram icon" class="footer-icon"></a>
-                    <a href="https://www.facebook.com/"><img src="./svg/u_facebook-f.svg" alt="facebook icon" class="footer-icon"></a>
-                </div>
+                    <a href="https://twitter.com/BKLYNlibrary"><img src="./svg/u_twitter-alt.svg" alt="twitter icon" class="footer-icon"></a>
+                    <a href="https://www.instagram.com/bklynlibrary"><img src="./svg/u_instagram.svg" alt="instagram icon" class="footer-icon"></a>
+                    <a href="https://www.facebook.com/BrooklynPublicLibrary"><img src="./svg/u_facebook-f.svg" alt="facebook icon" class="footer-icon"></a>
+                </div> -->
+                <ul class="social-media-icons">
+                  <li>
+                    <a href="https://twitter.com/BKLYNlibrary"><img src="./svg/u_twitter-alt.svg" alt="twitter icon" class="footer-icon"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/bklynlibrary"><img src="./svg/u_instagram.svg" alt="instagram icon" class="footer-icon"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/BrooklynPublicLibrary"><img src="./svg/u_facebook-f.svg" alt="facebook icon" class="footer-icon"></a>
+                  </li>
+                </ul>
               </div>  
               <div class="footer-middle-right-block">
                 <p class="working-hours">Sat - Sun<br>10:00 am - 06:00 pm</p>
@@ -267,8 +302,8 @@
             </div>
             <div class="footer-bottom-block">
                 <p class="year">2023</p>
-                <div><a href="https://rs.school/js-stage0/" class="rss-name">The Rolling Scopes School</a></div>
-                <div><a href="https://github.com/SvetOcheyTvoih" class="username">SvetOcheyTvoih</a></div>
+                <div><a href="https://rs.school/js-stage0/" class="rss-name-username">The Rolling Scopes School</a></div>
+                <div><a href="https://github.com/SvetOcheyTvoih" class="rss-name-username">Halina Karastseliova</a></div>
             </div>
         </div>
      </footer>
