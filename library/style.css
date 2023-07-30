@@ -215,7 +215,6 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background-color: chartreuse;
 }
 .season-picker-block {
   display: flex;
@@ -821,9 +820,8 @@ line-height: 20px; /* 133.333% */
 .social-media-icons {
   display: flex;
   gap: 15px;
-  padding-left: 1px;
+  padding-left: 1px;  
   list-style: none;
-  text-decoration: none;
 }
 .footer-bottom-block {
   display: flex;
